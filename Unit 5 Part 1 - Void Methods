@@ -1,0 +1,18 @@
+Task 1
+______________________________________________________________________________________________________
+
+/* Student: Andrea Santos
+   Teacher: Mrs. McCaffery 
+   Class : ICS3U
+   Title: Unit 5 Part 1 - Void Methods
+   Function of the program : To find the square root of a double number*/
+  
+  class squareRoot
+{
+  public static void main(String[]args)
+  {
+    double num = 81;
+    Math.sqrt(num);
+    System.out.println("The square root of " +num+ " is " +Math.sqrt(num));
+  }
+  }
