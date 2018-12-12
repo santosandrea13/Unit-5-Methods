@@ -1,6 +1,6 @@
 Task 1
 ______________________________________________________________________________________________________
-
+1)
 /* Student: Andrea Santos
    Teacher: Mrs. McCaffery 
    Class : ICS3U
@@ -16,3 +16,36 @@ ________________________________________________________________________________
     System.out.println("The square root of " +num+ " is " +Math.sqrt(num));
   }
   }
+
+---------------------------------------------------------------------------------------------------
+2)
+/* Student: Andrea Santos
+   Teacher: Mrs. McCaffery 
+   Class : ICS3U
+   Title: Unit 5 Part 1 - Void Methods
+   Function of the program : To find the square root of a double number*/
+  import java.util.*;
+  class squareRoot
+{
+  public static void main(String[]args)throws InterruptedException{
+    Scanner myInput = new Scanner(System.in);
+    double x;
+    char answer = 'y'; //is the variable to declare that the answer must equal to 'y' to continue
+    
+    while (answer == 'y' || answer == 'Y')
+      {
+    System.out.println("Please type in a number that you wish to find the square root of.");
+    x = myInput.nextInt();
+    System.out.println("The square root of " +x+ " is " +Math.sqrt(x)); 
+    Thread.sleep(1500);//pauses code for dialogue
+    {
+    System.out.println("Do you want to find the square root of another number?");
+    Thread.sleep(2000);//pauses code for dialouge
+    System.out.println("Type 'y' for yes and 'n' for no.");
+    answer = myInput.next().charAt(0);  
+    }
+    }
+     myInput.close(); // this will eliminate the warning becuase you need to close the scanner you opened.  
+    }
+    }
+    
